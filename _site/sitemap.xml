@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://auth.lab.sspcloud.fr/auth/realms/sspcloud/protocol/openid-connect/auth?client_id=onyxia&amp;redirect_uri=https%3A%2F%2Fdatalab.sspcloud.fr%2F&amp;response_type=code&amp;scope=openid+profile&amp;state=b2lkYy1zcGEuoVdCVecyF_14GYJ32P6d&amp;code_challenge=a2v6o-s7nYhrDbJhcdJOc-77S2LoseyGbcK5puR7whQ&amp;code_challenge_method=S256&amp;response_mode=fragment&amp;ui_locales=en&amp;onyxia-instance-public-url=https%3A%2F%2Fdatalab.sspcloud.fr/notebooks/currentResearch.html</loc>
+    <lastmod>2026-06-22T07:35:33.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://auth.lab.sspcloud.fr/auth/realms/sspcloud/protocol/openid-connect/auth?client_id=onyxia&amp;redirect_uri=https%3A%2F%2Fdatalab.sspcloud.fr%2F&amp;response_type=code&amp;scope=openid+profile&amp;state=b2lkYy1zcGEuoVdCVecyF_14GYJ32P6d&amp;code_challenge=a2v6o-s7nYhrDbJhcdJOc-77S2LoseyGbcK5puR7whQ&amp;code_challenge_method=S256&amp;response_mode=fragment&amp;ui_locales=en&amp;onyxia-instance-public-url=https%3A%2F%2Fdatalab.sspcloud.fr/notebooks/ModelApproach.html</loc>
+    <lastmod>2026-06-22T07:35:33.455Z</lastmod>
+  </url>
+  <url>
+    <loc>https://auth.lab.sspcloud.fr/auth/realms/sspcloud/protocol/openid-connect/auth?client_id=onyxia&amp;redirect_uri=https%3A%2F%2Fdatalab.sspcloud.fr%2F&amp;response_type=code&amp;scope=openid+profile&amp;state=b2lkYy1zcGEuoVdCVecyF_14GYJ32P6d&amp;code_challenge=a2v6o-s7nYhrDbJhcdJOc-77S2LoseyGbcK5puR7whQ&amp;code_challenge_method=S256&amp;response_mode=fragment&amp;ui_locales=en&amp;onyxia-instance-public-url=https%3A%2F%2Fdatalab.sspcloud.fr/index.html</loc>
+    <lastmod>2026-06-22T09:09:27.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://auth.lab.sspcloud.fr/auth/realms/sspcloud/protocol/openid-connect/auth?client_id=onyxia&amp;redirect_uri=https%3A%2F%2Fdatalab.sspcloud.fr%2F&amp;response_type=code&amp;scope=openid+profile&amp;state=b2lkYy1zcGEuoVdCVecyF_14GYJ32P6d&amp;code_challenge=a2v6o-s7nYhrDbJhcdJOc-77S2LoseyGbcK5puR7whQ&amp;code_challenge_method=S256&amp;response_mode=fragment&amp;ui_locales=en&amp;onyxia-instance-public-url=https%3A%2F%2Fdatalab.sspcloud.fr/notebooks/dataSource.html</loc>
+    <lastmod>2026-06-22T07:35:33.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://auth.lab.sspcloud.fr/auth/realms/sspcloud/protocol/openid-connect/auth?client_id=onyxia&amp;redirect_uri=https%3A%2F%2Fdatalab.sspcloud.fr%2F&amp;response_type=code&amp;scope=openid+profile&amp;state=b2lkYy1zcGEuoVdCVecyF_14GYJ32P6d&amp;code_challenge=a2v6o-s7nYhrDbJhcdJOc-77S2LoseyGbcK5puR7whQ&amp;code_challenge_method=S256&amp;response_mode=fragment&amp;ui_locales=en&amp;onyxia-instance-public-url=https%3A%2F%2Fdatalab.sspcloud.fr/notebooks/Results.html</loc>
+    <lastmod>2026-06-22T07:35:33.458Z</lastmod>
+  </url>
+</urlset>

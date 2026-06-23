@@ -3,12 +3,16 @@ project:
   execute-dir: project
   render: # Add HERE new chapters and new notebooks
     - index.qmd
-    - chapters/chapter1.qmd
-    - notebooks/notebook1.qmd
+    - notebooks/dataSource.qmd
+    - notebooks/ModelApproach.qmd
+    - notebooks/Results.qmd
+    - notebooks/currentResearch.qmd
+    #- chapters/chapter1.qmd
+    #- notebooks/notebook1.qmd
 
 website:
   page-navigation: true
-  title: "Template for training resources in Python"
+  title: "AIML4OS WP10 - Cluster 2"
   # In the two URLs below:
   # - replace AIML4OS by the Github account/organization your repository is hosted by;
   # - replace AIML4OS-template-quarto-python by the name of your repository.
@@ -21,8 +25,14 @@ website:
     contents: # Add HERE new chapters (but not the notebooks)
       - href: index.qmd
         text: Introduction
-      - href: chapters/chapter1.qmd
-        text: A complete example
+      - href: notebooks/dataSource.qmd
+        text: Data source
+      - href: notebooks/ModelApproach.qmd
+        text: Model Approach
+      - href: notebooks/Results.qmd
+        text: Results
+      - href: notebooks/currentResearch.qmd
+        text: Current research
 
 format:
   html:
