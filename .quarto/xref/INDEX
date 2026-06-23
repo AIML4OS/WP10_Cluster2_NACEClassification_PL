@@ -1,0 +1,11 @@
+{
+  "index.qmd": {
+    "index.html": "f24f5eed"
+  },
+  "chapters/chapter1.qmd": {
+    "chapter1.html": "e616f1f2"
+  },
+  "notebooks/notebook1.qmd": {
+    "notebook1.ipynb": "538dc14c"
+  }
+}
