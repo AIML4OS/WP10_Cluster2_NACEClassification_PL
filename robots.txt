@@ -1,1 +1,1 @@
-Sitemap: https://auth.lab.sspcloud.fr/auth/realms/sspcloud/protocol/openid-connect/auth?client_id=onyxia&redirect_uri=https%3A%2F%2Fdatalab.sspcloud.fr%2F&response_type=code&scope=openid+profile&state=b2lkYy1zcGEuoVdCVecyF_14GYJ32P6d&code_challenge=a2v6o-s7nYhrDbJhcdJOc-77S2LoseyGbcK5puR7whQ&code_challenge_method=S256&response_mode=fragment&ui_locales=en&onyxia-instance-public-url=https%3A%2F%2Fdatalab.sspcloud.fr/sitemap.xml
+Sitemap: https://AIML4OS.github.io/WP10_Cluster2_NACEClassification_PL/sitemap.xml
