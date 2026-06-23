@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "notebooks/currentResearch.html",
+    "href": "notebooks/currentResearch.html",
+    "title": "Current research",
+    "section": "",
+    "text": "Current research\nWe are currently implementing the RAG technique with an LLM in our pipeline. All relevant sources (documents describing PKD codes and website descriptions) have been stored in the ChromaDB vector database.\n\n\n\n\n\nAt the same time, we are testing the LoRA (Low‑Rank Adaptation) method, which will allow us to adapt the LLM to our specific use case.",
+    "crumbs": [
+      "Current research"
+    ]
+  },
+  {
+    "objectID": "notebooks/ModelApproach.html",
+    "href": "notebooks/ModelApproach.html",
+    "title": "Model approach",
+    "section": "",
+    "text": "Model approach\nThe example of pipeline:\n\n\n\n\n\n\n\nPre-processing\nWe began by preprocessing the collected web data, which included cleaning the text, removing special characters, normalising the content, and stripping HTML tags. We then converted all text to lowercase. Digits and special characters were removed as well, since they usually do not contribute to the classification task. We also used regular expressions to filter out phone numbers and email addresses and ensured that any confidential information was removed.\n\n\nBielik – Polish Language Model\nIn the next stage of the work, the approach to processing text collected from company websites was revised. Instead of relying on traditional cleaning and preprocessing techniques, we adopted a method based on the Polish language model Bielik‑1.5B‑v3.0‑Instruct (Mistral), which enables effective handling of raw textual data. The model not only supports summarisation but also handles text translation, which is particularly important when working with multilingual data. As a result, it was possible to standardise the input data without relying on additional translation tools. Using prompt‑engineering techniques, the model was applied to generate concise summaries of long and often unstructured content extracted from websites. This approach significantly simplified the data‑processing pipeline by eliminating the need for traditional NLP methods such as removing named entities, stemming or lemmatisation. The adopted solution reduced data‑preparation time and lowered the overall complexity of the process.\nIt is worth noting that, due to its size and open‑source nature, Bielik could be run locally on the Statistics Poland server, ensuring that no sensitive data was shared externally.\n\n\nVectorization\nThe text was transformed into numerical representations using vectorisation methods. These representations were used as input for model training.\n\n\nModels and machine learning\nThe models are evaluated using standard metrics such as accuracy, precision, and recall. We tested both traditional machine learning algorithms (decision trees, random forests and logistic regression) and XLM‑RoBERTa (XLM‑R), a multilingual language model based on the Transformer architecture, fine‑tuned on NACE‑related data from Norway and Denmark. To optimise performance, we applied hyperparameter tuning. We used GridSearchCV with three‑fold cross‑validation, systematically testing multiple parameter combinations for each model. This allowed us to identify the best configuration for both the machine learning models and XLM‑RoBERTa.",
+    "crumbs": [
+      "Model Approach"
+    ]
+  },
+  {
+    "objectID": "notebooks/dataSource.html",
+    "href": "notebooks/dataSource.html",
+    "title": "Web data",
+    "section": "",
+    "text": "Web data\nThe main source of data consists of company descriptions collected from their websites, particularly from subpages that outline their business profile, such as “about us” or “company information”. Texts from these pages typically contain detailed information about business activities, services, or products.\n\n\nSynthetic data\nDue to the insufficient amount of available data and the imbalance within the dataset (for example, one class contained around 800 observations, while another had only 1 or none), we decided to generate synthetic data.\nTo generate synthetic data, we used an LLM (Groq‑API), which was applied to create new textual examples. The generated data followed a standardised structure consisting of:\n\nDescription – a short description of the enterprise\nPKD – the corresponding PKD code\n\nAt the same time, to verify the style of the generated descriptions, we tested LM Arena, analysing the consistency and overall quality of the produced texts. The outcome of this work is a synthetic dataset that was incorporated into the subsequent stages of the project. This made it possible to partially mitigate the issue of imbalanced classes and improve the models’ ability to generalise.",
+    "crumbs": [
+      "Data source"
+    ]
+  },
+  {
+    "objectID": "notebooks/Results.html",
+    "href": "notebooks/Results.html",
+    "title": "Results with web data",
+    "section": "",
+    "text": "Results with web data\nThe best result was achieved using logistic regression combined with TF‑IDF, which also delivered the highest accuracy. This may be due to the fact that, for the dataset analysed, the relationships between features and labels are largely linear, which favours models such as logistic regression. In addition, the TF‑IDF representation effectively captured the key textual information without introducing unnecessary model complexity.\n\n\n\nResults with web data and synthetic data\nAfter retraining the model using both the data collected from company websites and the newly generated synthetic data, we observed very high effectiveness in predicting the two‑digit NACE code. Both the Top‑5 and Top‑10 accuracy increased to a high and stable level, confirming the benefits of enriching the dataset.\n\nEncouraged by these results, we repeated the entire pipeline for the four‑digit codes — that is, data balancing, enriching the dataset with synthetic samples, and training the models. However, due to the much larger number of classes and the higher level of detail, the outcomes were less satisfactory. As expected, the task proved to be significantly more complex, and although the Top‑5 and Top‑10 results remained at an acceptable level, they are clearly lower than in the case of the two‑digit classification.",
+    "crumbs": [
+      "Results"
+    ]
+  }
+]
