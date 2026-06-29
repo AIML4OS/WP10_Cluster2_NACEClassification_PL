@@ -70,9 +70,7 @@ This project is built using:
 
 You can test our example code on Onyxia. Click the button below to launch Onyxia with the Visual Studio Code service and our repository already loaded.
 
-<a href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=example_code_PL&version=2.5.7&s3=default&resources.requests.cpu=«25900m»&resources.requests.memory=«171Gi»&resources.limits.cpu=«30000m»&resources.limits.memory=«200Gi»&git.repository=«https%3A%2F%2Fgithub.com%2FAIML4OS%2FWP10_Cluster2_NACEClassification_PL.git»&git.branch=«example_code»&autoLaunch=true"><img src="https://custom-icon-badges.demolab.com/badge/SSP%20Cloud-Launch_with_VSCode-blue?logo=vsc&amp;logoColor=white" alt="Onyxia"></a>
-
-
+<a href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=example_code_PL&version=2.5.7&s3=default&resources.requests.cpu=«25900m»&resources.requests.memory=«171Gi»&resources.limits.cpu=«30000m»&resources.limits.memory=«200Gi»&git.repository=«https%3A%2F%2Fgithub.com%2FAIML4OS%2FWP10_Cluster2_NACEClassification_PL.git»&git.branch=«example_code»&autoLaunch=true" target="_blank" rel="noopener" data-original-href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?name=example_code_PL&version=2.5.7&s3=default&resources.requests.cpu=«25900m»&resources.requests.memory=«171Gi»&resources.limits.cpu=«30000m»&resources.limits.memory=«200Gi»&git.repository=«https%3A%2F%2Fgithub.com%2FAIML4OS%2FWP10_Cluster2_NACEClassification_PL.git»&git.branch=«example_code»&autoLaunch=true"><img src="https://custom-icon-badges.demolab.com/badge/SSP%20Cloud-Launch_with_VSCode-blue?logo=vsc&amp;logoColor=white" alt="Onyxia"></a>
 
 ## How to set enviorment
 
