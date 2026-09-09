@@ -22,9 +22,9 @@ mkdir -p .vscode
 
 cat > .vscode/settings.json <<'EOF'
 {
-    "python.defaultInterpreterPath": "${workspaceFolder}/example_code/.venv/bin/python",
+    "python.defaultInterpreterPath": "/home/onyxia/work/$MY_REPO/example_code/.venv/bin/python",
     "python.terminal.activateEnvironment": true,
-    "jupyter.notebookFileRoot": "${workspaceFolder}/example_code",
+    "jupyter.notebookFileRoot": "/home/onyxia/work/$MY_REPO/example_code",
     "files.exclude": {
         "**/.git": true,
         "**/.venv": true,
