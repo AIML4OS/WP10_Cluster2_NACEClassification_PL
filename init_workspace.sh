@@ -19,3 +19,10 @@ mkdir -p TESTOWY
 
 echo "$$MY_REPO" >> plik.txt
 ls -la >> plik.txt
+
+
+cd ..
+
+# Set VSCode's default interpreter path
+mkdir -p .vscode
+echo "{ \"python.defaultInterpreterPath\": \"./$MY_REPO/example_code/.venv/bin/python\" }" >> .vscode/settings.json
