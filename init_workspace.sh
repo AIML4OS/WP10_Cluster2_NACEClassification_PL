@@ -12,15 +12,49 @@ cd $MY_REPO
 
 cd example_code
 
+# Setup enviorment packages
 uv sync
 
-cd Summary
+cd ..
+
+# Set VSCode's default interpreter path
+mkdir -p .vscode
+
+cat > .vscode/settings.json <<'EOF'
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/example_code/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}/example_code",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.venv": true,
+        "**/images": true,
+        "**/chapters": true,
+        "**/notebooks": true,
+        "**/_site": true,
+        "**/sspcloud": true,
+
+        "styles.css": true,
+        "export-metadata.lua": true,
+        ".python-version": true,
+        "pyproject.toml": true,
+        "uv.lock": true,
+        "metadata.json": true,
+        "_brand.yml": true,
+        "about.qmd": true,
+        ".gitignore": true,
+        "init.sh": true,
+        "README.md": true,
+        "index.qmd": true,
+        "_quarto.yml": true,
+        "init_workspace.sh": true,
+
+        "**/example_code": false
+    }
+}
+EOF
+
+
+# Download Bielki model file
+cd example_code/Summary
 curl -L -o Bielik-1.5B-v3.0-Instruct.Q8_0.gguf "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct-GGUF/resolve/main/Bielik-1.5B-v3.0-Instruct.Q8_0.gguf?download=true"
-
-echo $? >> plik.txt
-
-mkdir -p TESTOWY
-
-echo "$MY_REPO" >> plik.txt
-ls -la >> plik.txt
-
