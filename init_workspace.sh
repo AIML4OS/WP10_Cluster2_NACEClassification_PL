@@ -8,4 +8,8 @@ export MY_REPO="$(basename "${GIT_REPOSITORY%.git}")"
 
 echo "Repository: $MY_REPO"
 
-mkdir -p /home/onyxia/work/TESTOWY
+cd $MY_REPO
+
+cd example_code
+
+mkdir -p TESTOWY
