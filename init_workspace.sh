@@ -2,4 +2,5 @@
 
 #Script for workspace initialisation 
 
-echo "Hello, world!"
+cd WP10_Cluster2_NACEClassification_PL/example_code
+code .
