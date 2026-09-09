@@ -15,7 +15,7 @@ cd example_code
 uv sync
 
 cd Summary
-curl -O "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct-GGUF/resolve/main/Bielik-1.5B-v3.0-Instruct.Q8_0.gguf?download=true"
+curl -L -o Bielik-1.5B-v3.0-Instruct.Q8_0.gguf "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct-GGUF/resolve/main/Bielik-1.5B-v3.0-Instruct.Q8_0.gguf?download=true"
 
 echo $? >> plik.txt
 
