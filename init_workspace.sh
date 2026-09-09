@@ -13,16 +13,14 @@ cd $MY_REPO
 cd example_code
 
 uv sync
+
+cd Summary
+curl -O "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct-GGUF/resolve/main/Bielik-1.5B-v3.0-Instruct.Q8_0.gguf?download=true"
+
 echo $? >> plik.txt
 
 mkdir -p TESTOWY
 
-echo "$$MY_REPO" >> plik.txt
+echo "$MY_REPO" >> plik.txt
 ls -la >> plik.txt
 
-
-cd ..
-
-# Set VSCode's default interpreter path
-mkdir -p .vscode
-echo "{ \"python.defaultInterpreterPath\": \"./$MY_REPO/example_code/.venv/bin/python\" }" >> .vscode/settings.json
