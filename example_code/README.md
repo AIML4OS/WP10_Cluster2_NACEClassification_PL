@@ -38,7 +38,7 @@ You can test our example code on Onyxia. Click the button below to launch Onyxia
 
 1. Open a new terminal and navigate to the repository directory:
 
-    `cd WP10_Cluster2_NACEClassification_PL/`
+    `cd WP10_Cluster2_NACEClassification_PL/example_code/`
 
 2. Run command:
 
@@ -48,7 +48,7 @@ You can test our example code on Onyxia. Click the button below to launch Onyxia
 
     *ctr+schift+p  or f1*
 
-    *Python: Select Interpreter > Enter interpreter path > /home/onyxia/work/WP10-CLuster_2-example_code/.venv/bin/python*
+    *Python: Select Interpreter > Enter interpreter path > /home/onyxia/work/WP10_Cluster2_NACEClassification_PL/example_code/.venv/bin/python*
 
 4. Open Jupyter notebook file and change kernel:
 
