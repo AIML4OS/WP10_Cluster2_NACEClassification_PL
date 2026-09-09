@@ -24,7 +24,6 @@ cat > .vscode/settings.json <<'EOF'
 {
     "python.defaultInterpreterPath": "/home/onyxia/work/WP10_Cluster2_NACEClassification_PL/example_code/.venv/bin/python",
     "python.terminal.activateEnvironment": true,
-    "jupyter.notebookFileRoot": "/home/onyxia/work/WP10_Cluster2_NACEClassification_PL/example_code",
     "files.exclude": {
         "**/.git": true,
         "**/images": true,
@@ -46,6 +45,8 @@ cat > .vscode/settings.json <<'EOF'
         "**/index.qmd": true,
         "**/_quarto.yml": true,
         "**/init_workspace.sh": true,
+        "**/_extensions": true,
+        "**/resources": true,
 
         "**/example_code": false
     }
