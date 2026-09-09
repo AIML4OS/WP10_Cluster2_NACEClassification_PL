@@ -15,7 +15,7 @@ cd example_code
 # Setup enviorment packages
 uv sync
 
-cd ..
+cd ../../
 
 # Set VSCode's default interpreter path
 mkdir -p .vscode
@@ -56,5 +56,5 @@ EOF
 
 
 # Download Bielki model file
-cd example_code/Summary
+cd $MY_REPO/example_code/Summary
 curl -L -o Bielik-1.5B-v3.0-Instruct.Q8_0.gguf "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct-GGUF/resolve/main/Bielik-1.5B-v3.0-Instruct.Q8_0.gguf?download=true"
