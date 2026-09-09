@@ -22,32 +22,30 @@ mkdir -p .vscode
 
 cat > .vscode/settings.json <<'EOF'
 {
-    "python.defaultInterpreterPath": "/home/onyxia/work/$MY_REPO/example_code/.venv/bin/python",
+    "python.defaultInterpreterPath": "/home/onyxia/work/WP10_Cluster2_NACEClassification_PL/example_code/.venv/bin/python",
     "python.terminal.activateEnvironment": true,
-    "jupyter.notebookFileRoot": "/home/onyxia/work/$MY_REPO/example_code",
+    "jupyter.notebookFileRoot": "/home/onyxia/work/WP10_Cluster2_NACEClassification_PL/example_code",
     "files.exclude": {
         "**/.git": true,
-        "**/.venv": true,
         "**/images": true,
         "**/chapters": true,
         "**/notebooks": true,
         "**/_site": true,
         "**/sspcloud": true,
-
-        "styles.css": true,
-        "export-metadata.lua": true,
-        ".python-version": true,
-        "pyproject.toml": true,
-        "uv.lock": true,
-        "metadata.json": true,
-        "_brand.yml": true,
-        "about.qmd": true,
-        ".gitignore": true,
-        "init.sh": true,
-        "README.md": true,
-        "index.qmd": true,
-        "_quarto.yml": true,
-        "init_workspace.sh": true,
+        "**/styles.css": true,
+        "**/export-metadata.lua": true,
+        "**/.python-version": true,
+        "**/pyproject.toml": true,
+        "**/uv.lock": true,
+        "**/metadata.json": true,
+        "**/_brand.yml": true,
+        "**/about.qmd": true,
+        "**/.gitignore": true,
+        "**/init.sh": true,
+        "**/README.md": true,
+        "**/index.qmd": true,
+        "**/_quarto.yml": true,
+        "**/init_workspace.sh": true,
 
         "**/example_code": false
     }
