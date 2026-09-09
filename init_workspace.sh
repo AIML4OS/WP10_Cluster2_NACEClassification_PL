@@ -12,4 +12,8 @@ cd $MY_REPO
 
 cd example_code
 
+uv sync
+
+echo "{ \"python.defaultInterpreterPath\": \"./$MY_REPO/example_code/.venv/bin/python\" }" >> ../.vscode/settings.json
+
 mkdir -p TESTOWY
